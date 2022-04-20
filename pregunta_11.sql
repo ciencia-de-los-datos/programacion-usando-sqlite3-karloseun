@@ -38,4 +38,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
-SELECT strftime('%Y',c14) as YEAR, COUNT(K1) as CANT FROM tbl1 GROUP BY YEAR HAVING YEAR = '2018';
+SELECT COUNT(*) FROM tbl1 GROUP BY strftime('%Y',c14) HAVING strftime('%Y',c14) = '2018';
